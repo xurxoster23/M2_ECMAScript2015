@@ -9,25 +9,19 @@ class Alumno {
     constructor (nombre, apellidos, puntos){
         this.nombre = nombre;
         this.apellidos = apellidos;
-        this.puntos = this.getPoints(puntos);
+        this.puntos = this.getPuntos(puntos);
     }
 
-    setPoints(puntos){
-        this.puntos = puntos;
+    setPuntos(puntos) {
+       this.puntos = puntos;
     }
 
-    getPoints(puntos) {
-        if (puntos >= 5) {
-            return 'Apto'
-        } else {
-            return 'No apto'
-        }
+    getPuntos(puntos) {
+        if (puntos >= 5) 
+            return `Apto`;
+        return `No apto`;
     }
 }
-
-// let name = document.getElementById("name").value;
-// let surname = document.getElementById("surname").value;
-// let points = document.getElementById("points").value;
 
 function getAlumno (name,surname,points) {
     return new Promise((resolve, reject) => {
@@ -48,7 +42,7 @@ async function showUserResult() {
             document.getElementById("name").value,
             document.getElementById("surname").value,
             document.getElementById("points").value
-        ); 
+        );
         console.log(`
                 Nombre : ${alumn.nombre},
                 Apellidos : ${alumn.apellidos}.
@@ -59,7 +53,8 @@ async function showUserResult() {
     }
 }
 
-// ** CallBack del Objeto Promise **
+
+// // ** CallBack del Objeto Promise **
 // getAlumno('Jorge','Borrego',4) // Los parámetros usados en la function son de Ejemplo
 //     .then( data => {
 //         console.log(`
