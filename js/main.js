@@ -16,8 +16,8 @@ class Alumno {
        this.puntos = puntos;
     }
 
-    getPuntos(puntos) {
-        if (puntos >= 5) 
+    getPuntos() {
+        if (this.puntos >= 5) 
             return `Apto`;
         return `No apto`;
     }
