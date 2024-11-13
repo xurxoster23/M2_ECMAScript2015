@@ -23,13 +23,6 @@ class Alumno {
     }
 }
 
-<<<<<<< HEAD:practicaEvaluable/js/main.js
-=======
-let name = document.getElementById("name").value;
-let surname = document.getElementById("surname").value;
-let points = document.getElementById("points").value;
-
->>>>>>> b996622a13a2b5ea77d735fdd3a45e86ac186111:js/main.js
 function getAlumno (name,surname,points) {
     return new Promise((resolve, reject) => {
         if (
@@ -60,10 +53,6 @@ async function showUserResult() {
     }
 }
 
-<<<<<<< HEAD:practicaEvaluable/js/main.js
-
-=======
->>>>>>> b996622a13a2b5ea77d735fdd3a45e86ac186111:js/main.js
 // // ** CallBack del Objeto Promise **
 // getAlumno('Jorge','Borrego',4) // Los parámetros usados en la function son de Ejemplo
 //     .then( data => {
